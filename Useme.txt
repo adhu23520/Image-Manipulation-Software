@@ -1,0 +1,75 @@
+
+
+Load Image: Load an image from a specified path into the program.
+Format: load <image-path> <image-name>
+
+Save Image: Save an image from the program to a specified path.
+Format: save <image-path> <image-name>
+
+Flip Image Vertically: Invert the image along its vertical axis.
+Format: vertical-flip <image-name> <dest-image-name> (need to load image first)
+
+Flip Image Horizontally: Invert the image along its horizontal axis.
+Format: horizontal-flip <image-name> <dest-image-name> (need to load image first)
+
+Greyscale Image: Convert an image to greyscale based on a specific component (Red, Green, Blue, Luma, Intensity).
+Format: greyscale <component-name> <image-name> <dest-image-name> (need to load image first)
+Format for Luma: greyscale <image-name> <dest-image-name> (need to load image first)
+
+RGB Split: Split an image into separate red, green, and blue greyscale versions.
+Format: rgb-split <image-name> <dest-red> <dest-green> <dest-blue> (need to load image first)
+
+Brighten or Darken Images: Increase or decrease the brightness of an image.
+Format: brighten <increment> <image-name> <dest-image-name> (need to load image first)(Can input negative value to darken and positive value to brighten)
+
+RGB Combine: Merge separate red, green, and blue greyscale images into a single color image.
+Format: rgb-combine <image-name> <red-image> <green-image> <blue-image> (need to load image first)
+
+Run Script File: Execute a series of commands from a specified script file.
+Format: run-script <path>
+
+Blur Image: Apply a blur effect to an image.
+Format: blur <image-name> <dest-image-name> (need to load image first)
+
+Sharpen Image: Enhance the sharpness of an image.
+Format: sharpen <image-name> <dest-image-name> (need to load image first)
+
+Sepia Image: Apply a sepia tone effect to an image.
+Format: sepia <image-name> <dest-image-name> (need to load image first)
+
+
+Color Correction: Apply color correction to enhance the visual quality of the source image.
+Format: color-correct <source-image> <dest-image> (need to load image first)
+
+Histogram: Create a visual histogram representation from the source image, highlighting the distribution of pixel intensities.
+Format: histogram <source-image> <dest-image> (need to load image first)
+
+Level Adjustment: Adjust the black, mid, and white points in the source image to modify contrast and brightness.
+Format: levels-adjust <black> <mid> <white> <source-image> <dest-image> (need to load image first)(conditions:b<m<w and 0<=b,m,w<=255)
+
+Co>mpression: Reduce the file size of the image by a specified percentage while aiming to maintain as much of the original quality as possible.
+Format: compression <percentage> <image-path> (need to load image first) (conditions: 0<=percent>=100)
+
+
+Steps to use GUI - 
+
+1.)Open the command prompt and navigate to the folder containing the .jar file.
+2.)Enter java -jar file_name.jar to start the graphical user interface (GUI).
+3.)The GUI is divided into four sections:
+         An area to display the current image you're working on.
+         A section to show the histogram of the image at all times.
+         A space for displaying the label of the histogram.
+         A panel with functional buttons for various operations.
+4.)Click the 'Load' button to import an image into the program.
+5.)After loading, any changes made to the image will reflect in the histogram.
+6.)The color-correction, Sepia, Levels-adjustment,Sharpena and Blur command will have a split view option to give the user a preview of the operation.
+7.)Click 'Save' to store the image open in the image panel. You'll need to provide a name for the saved file.
+8.)Choose 'Quit' to exit the program when you're finished.
+
+
+
+HOW TO USE THE JAR FILE:
+1. Open the terminal inside the res/ folder where the jar file and the sample image exist.
+2. Run the jar file using the command (java -jar Assignment--4.jar)
+3. Input the appropriate commands one by one as mentioned in command.txt. 
+

@@ -1,0 +1,39 @@
+load shoe.jpg game
+horizontal-flip game hfgame
+save hfgame.jpg hfgame
+load shoe.jpg game
+vertical-flip game vfgame
+save vfgame.jpg vfgame
+load shoe.jpg game
+sharpen game sharpengame
+save sharpengame.jpg sharpengame
+load shoe.jpg game
+sepia game sepiagame
+save sepiagame.jpg sepiagame
+load shoe.jpg game
+brighten 80 game brightg
+save brightg.jpg brightg
+load shoe.jpg game
+rgb-split game rgame ggame bgame
+rgb-combine combinegame rgame ggame bgame
+save combinegame.jpg combinegame
+load shoe.jpg game
+rgb-split game rgame ggame bgame
+save rgame.jpg rgame
+save ggame.jpg ggame
+save bgame.jpg bgame
+load shoe.jpg game
+greyscale game greygame
+save greygame.jpg greygame
+load shoe.jpg game
+histogram game hisgame
+save hisgame.jpg hisgame
+load shoe.jpg game
+levels-adjust 20 100 255 game lagame
+save lagame.jpg lagame
+load shoe.jpg game
+color-correction game ccgame
+save ccgame.jpg ccgame
+load shoe.jpg game
+compress 80 game compressgame
+save compressgame.jpg compressgame
